@@ -1,0 +1,40 @@
+@import 'tailwindcss';
+
+/* Спільні кольори для утиліт обох тем. */
+:root {
+  color-scheme: light;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  --page: #f3f7fa;
+  --card: #ffffff;
+  --text: #26384a;
+  --heading: #12283b;
+  --accent: #087f78;
+  --muted: #526579;
+  --border: #ccd8e2;
+  --hover: #e1f3f0;
+  color: var(--text);
+  background: var(--page);
+}
+body.dark-mode {
+  color-scheme: dark;
+  --page: #0b1220;
+  --card: #101b2c;
+  --text: #d7e0ed;
+  --heading: #f1f5fb;
+  --accent: #69dfd0;
+  --muted: #9facbf;
+  --border: #28374b;
+  --hover: #132c33;
+}
+body {
+  color: var(--text);
+  background: var(--page);
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
