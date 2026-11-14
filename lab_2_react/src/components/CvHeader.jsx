@@ -11,7 +11,7 @@ export default function CvHeader({
   return (
     <header className="border-b border-[var(--border)] pb-10">
       <p className="text-[11px] font-bold tracking-[0.16em] text-[var(--accent)]">
-        ОСОБИСТЕ РЕЗЮМЕ / 2026
+        ОСОБИСТЕ РЕЗЮМЕ / ЛАБОРАТОРНА 5
       </p>
       <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
         <div className="flex flex-wrap items-center gap-2.5">
