@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="uk" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Навчальне резюме Андрія Скалоцького, студента кібербезпеки Львівської політехніки."
+    />
+    <title>Андрій Скалоцький — резюме</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Внутрішній стиль: один невеликий приклад. -->
+    <style>
+      .intro-label {
+        text-transform: uppercase;
+      }
+    </style>
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <p class="intro-label">ОСОБИСТЕ РЕЗЮМЕ / 2026</p>
+      <div class="page-tools">
+        <div class="theme-controls" aria-label="Керування темою">
+          <button type="button" id="theme-toggle">Темна тема</button>
+          <button type="button" id="theme-auto" aria-pressed="true">
+            За часом
+          </button>
+          <span id="theme-status" role="status"></span>
+        </div>
+        <button type="button" id="open-contact">Написати мені</button>
+      </div>
+      <h1>Андрій <span>Скалоцький</span></h1>
+      <p>Студент кібербезпеки · захист даних · ігри та модифікації</p>
+      <p>Другий курс · група Кб-205</p>
+      <nav aria-label="Розділи резюме">
+        <a href="#about">Про мене</a>
+        <a href="#education">Освіта</a>
+        <a href="#projects">Навчальні роботи</a>
+        <a href="#skills">Навички</a>
+        <a href="#interests">Інтереси та цілі</a>
+        <a href="#reviews">Відгуки</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="about">
+        <p class="section-number">01 / ЗНАЙОМСТВО</p>
+        <h2>Про мене</h2>
+        <p>
+          Навчаюся на другому курсі кібербезпеки у Львівській політехніці. Мене
+          цікавить захист даних, а поза навчанням — відеоігри та модифікації до
+          них. Коли стикаюся з проблемою, для мене важливо розібратися в її
+          причині й знайти рішення.
+        </p>
+      </section>
+
+      <section id="education">
+        <p class="section-number">02 / ОСВІТА</p>
+        <h2>Де навчаюся</h2>
+        <h3>Національний університет «Львівська політехніка»</h3>
+        <p>
+          Інститут ІКТА, спеціальність «Кібербезпека». Другий курс, група
+          Кб-205.
+        </p>
+        <p><a href="https://lpnu.ua/">Сайт університету</a></p>
+        <h3>Березнівський ліцей № 1</h3>
+        <p>Повна загальна середня освіта з відзнакою.</p>
+      </section>
+
+      <section id="projects">
+        <p class="section-number">03 / ПРАКТИКА</p>
+        <h2>Що вже пробував</h2>
+        <p>
+          Досвід поки здобуваю під час навчання. Ось декілька виконаних робіт.
+        </p>
+        <article>
+          <h3>Моделювання комп’ютерної мережі</h3>
+          <p>
+            У Cisco Packet Tracer з’єднував мережеві пристрої, налаштовував
+            адресацію та перевіряв обмін даними між вузлами.
+          </p>
+        </article>
+        <article>
+          <h3>Завдання з програмування на C#</h3>
+          <p>
+            Працював із масивами, класами, інтерфейсами та алгоритмами
+            сортування. Створював прості застосунки Windows Forms.
+          </p>
+        </article>
+        <article>
+          <h3>Дослідження завантаження GitHub</h3>
+          <p>
+            Через Chrome DevTools дослідив HTTP-запити, перенаправлення, часові
+            етапи завантаження, TLS та cookie.
+          </p>
+        </article>
+      </section>
+
+      <section id="skills">
+        <p class="section-number">04 / ІНСТРУМЕНТИ</p>
+        <h2>З чим працюю</h2>
+        <ul>
+          <li>Python та C# — працював із цими мовами під час навчання.</li>
+          <li>Cisco Packet Tracer — створення й перевірка навчальних мереж.</li>
+          <li>HTML та JavaScript — початкові знання, продовжую вивчати.</li>
+          <li>Git — знайомлюся з базовими командами та роботою з комітами.</li>
+          <li>Англійська — B2.</li>
+        </ul>
+      </section>
+      <section id="interests">
+        <p class="section-number">05 / НАСТУПНИЙ КРОК</p>
+        <h2>Що хочу дослідити</h2>
+        <p>
+          Хочу спробувати кілька напрямів в ІТ, щоб зрозуміти, який підходить
+          мені найбільше. Серед інтересів — захист даних і напрями, пов’язані з
+          відеоіграми та модифікаціями. Зараз зосереджуюся на навчанні й
+          поступово розширюю практичні навички.
+        </p>
+      </section>
+      <section id="reviews">
+        <p class="section-number">06 / ЗВОРОТНИЙ ЗВ’ЯЗОК</p>
+        <h2>Навчальні відгуки</h2>
+        <p id="review-source">Українські навчальні відгуки з файлу comments-22.uk.json.</p>
+        <p><a id="review-source-switch" href="?reviews=original#reviews">Оригінал із JSONPlaceholder</a></p>
+        <p id="review-status" role="status">Завантажую відгуки…</p>
+        <div id="review-list" class="review-list"></div>
+        <button type="button" id="retry-reviews">Повторити</button>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="https://github.com/andriyskalotskiy-hub">Мій GitHub</a></p>
+      <p>Андрій Скалоцький · Навчальне резюме · 2026</p>
+      <details class="system-info">
+        <summary>Системна інформація та localStorage</summary>
+        <p id="storage-status" role="status"></p>
+        <button type="button" id="refresh-storage">Оновити дані</button>
+        <dl id="storage-list"></dl>
+      </details>
+    </footer>
+    <dialog
+      id="contact-dialog"
+      aria-labelledby="contact-title"
+      aria-describedby="contact-description"
+    >
+      <div class="dialog-heading">
+        <h2 id="contact-title">Написати Андрію</h2>
+        <button type="button" id="close-contact" aria-label="Закрити форму">
+          Закрити
+        </button>
+      </div>
+      <p id="contact-description">
+        Залиште повідомлення — воно надійде на мою пошту через Formspree.
+      </p>
+      <form id="contact-form" method="POST">
+        <label for="contact-name">Ім’я</label>
+        <input
+          id="contact-name"
+          name="name"
+          autocomplete="name"
+          required
+          minlength="2"
+          maxlength="80"
+        />
+        <label for="contact-email">Email</label>
+        <input
+          id="contact-email"
+          name="email"
+          type="email"
+          autocomplete="email"
+          required
+          maxlength="150"
+        />
+        <label for="contact-phone">Номер телефону</label>
+        <input
+          id="contact-phone"
+          name="phone"
+          type="tel"
+          autocomplete="tel"
+          required
+          maxlength="30"
+          placeholder="+380…"
+        />
+        <label for="contact-message">Повідомлення</label>
+        <textarea
+          id="contact-message"
+          name="message"
+          required
+          minlength="5"
+          maxlength="3000"
+          rows="4"
+        ></textarea>
+        <input
+          type="hidden"
+          name="_subject"
+          value="Повідомлення з резюме — лабораторна 4"
+        />
+        <p id="form-status" role="status" aria-live="polite"></p>
+        <button type="submit">Надіслати</button>
+      </form>
+    </dialog>
+  </body>
+</html>
